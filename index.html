@@ -7,14 +7,24 @@
     <title>The Odin Catalog</title>
   </head>
   <body>
-    <div class="p-12">
-      <div class="text-2xl font-bold text-center mb-10 text-odin-text">THE ODIN CATALOG</div>
-      <div class="flex justify-center">
-        <table class="table-auto w-full border text-odin-text">
+    <div class="flex flex-col sm:flex-row p-12 gap-4">
+      <div class="flex flex-col mb-4 sm:block sm:w-1/4">
+        <div class="text-xl font-bold mb-10 text-odin-text">THE ODIN CATALOG</div>
+        <ul class="flex flex-wrap gap-4 sm:block">
+          <li id="node" class="text-odin-gold hover:cursor-pointer hover:text-odin-gold sm:mb-4">NODEJS</li>
+          <li id="react" class="hover:cursor-pointer hover:text-odin-gold sm:mb-4">REACT</li>
+          <li id="javascript" class="hover:cursor-pointer hover:text-odin-gold sm:mb-4">JAVASCRIPT</li>
+          <li id="css" class="hover:cursor-pointer hover:text-odin-gold sm:mb-4">CSS</li>
+          <li id="foundations" class="hover:cursor-pointer hover:text-odin-gold sm:mb-4">FOUNDATIONS</li>
+        </ul>
+      </div>
+      <div>
+        <!-- node projects -->
+        <table id="table-node" class="table-auto w-full border text-odin-text">
           <thead>
             <tr class="bg-odin-gold">
               <th class="border p-4 border-odin-gray">PROJECT</th>
-              <th class="border p-4 border-odin-gray">TECHNOLOGIES</th>
+              <th class="hidden sm:table-cell border p-4 border-odin-gray">TECHNOLOGIES</th>
               <th class="border p-4 border-odin-gray">REPO</th>
               <th class="border p-4 border-odin-gray">LIVE</th>
             </tr>
@@ -22,139 +32,191 @@
           <tbody>
             <tr>
               <td class="border p-2 border-odin-gray">Blog API</td>
-              <td class="border p-2 border-odin-gray">NextJS + TailwindCSS + Express</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">NextJS + TailwindCSS + Express</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Members Only</td>
-              <td class="border p-2 border-odin-gray">Express + EJS</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Express + EJS</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Garden Inventory</td>
-              <td class="border p-2 border-odin-gray">Express + EJS</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Express + EJS</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Mini Message Board</td>
-              <td class="border p-2 border-odin-gray">Express</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Express</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Basic Information Site</td>
-              <td class="border p-2 border-odin-gray">NodeJS / Express</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">NodeJS / Express</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
+          </tbody>
+        </table>
+        <!-- react projects -->
+        <table id="table-react" class="hidden table-auto w-full border text-odin-text">
+          <thead>
+            <tr class="bg-odin-gold">
+              <th class="border p-4 border-odin-gray">PROJECT</th>
+              <th class="hidden sm:table-cell border p-4 border-odin-gray">TECHNOLOGIES</th>
+              <th class="border p-4 border-odin-gray">REPO</th>
+              <th class="border p-4 border-odin-gray">LIVE</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td class="border p-2 border-odin-gray">Where's Waldo</td>
-              <td class="border p-2 border-odin-gray">React + Firebase</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">React + Firebase</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Shopping Cart</td>
-              <td class="border p-2 border-odin-gray">React</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">React</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Memory Card</td>
-              <td class="border p-2 border-odin-gray">React</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">React</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">CV Application</td>
-              <td class="border p-2 border-odin-gray">React(Class Components & Functional Components)</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">React(Class Components & Functional Components)</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
+          </tbody>
+        </table>
+        <!-- javascript projects -->
+        <table id="table-javascript" class="hidden table-auto w-full border text-odin-text">
+          <thead>
+            <tr class="bg-odin-gold">
+              <th class="border p-4 border-odin-gray">PROJECT</th>
+              <th class="hidden sm:table-cell border p-4 border-odin-gray">TECHNOLOGIES</th>
+              <th class="border p-4 border-odin-gray">REPO</th>
+              <th class="border p-4 border-odin-gray">LIVE</th>
+            </tr>
+          </thead>
+          <tbody>            
             <tr>
               <td class="border p-2 border-odin-gray">Battleship</td>
-              <td class="border p-2 border-odin-gray">Javascript + CSS + Webpack</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + CSS + Webpack</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Testing Practice</td>
-              <td class="border p-2 border-odin-gray">Javascript + Jest</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + Jest</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Weather App</td>
-              <td class="border p-2 border-odin-gray">Javascript + CSS (Work With WeatherAPI)</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + CSS (Work With WeatherAPI)</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">TODO List</td>
-              <td class="border p-2 border-odin-gray">Javascript + CSS + Webpack</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + CSS + Webpack</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Restaurant Page</td>
-              <td class="border p-2 border-odin-gray">Javascript + CSS + Webpack</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + CSS + Webpack</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Tic Tac Toe</td>
-              <td class="border p-2 border-odin-gray">Javascript + CSS</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + CSS</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Library</td>
-              <td class="border p-2 border-odin-gray">Javascript + CSS</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript + CSS</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
+          </tbody>
+        </table>
+        <!-- CSS -->
+        <table id="table-css" class="hidden table-auto w-full border text-odin-text">
+          <thead>
+            <tr class="bg-odin-gold">
+              <th class="border p-4 border-odin-gray">PROJECT</th>
+              <th class="hidden sm:table-cell border p-4 border-odin-gray">TECHNOLOGIES</th>
+              <th class="border p-4 border-odin-gray">REPO</th>
+              <th class="border p-4 border-odin-gray">LIVE</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td class="border p-2 border-odin-gray">Admin Dashboard</td>
-              <td class="border p-2 border-odin-gray">HTML + CSS (CSS Grid)</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">HTML + CSS (CSS Grid)</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Sign-up Form</td>
-              <td class="border p-2 border-odin-gray">HTML + CSS + Javascript</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">HTML + CSS + Javascript</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
+          </tbody>
+        </table>
+        <!-- foundations -->
+        <table id="table-foundations" class="hidden table-auto w-full border text-odin-text">
+          <thead>
+            <tr class="bg-odin-gold">
+              <th class="border p-4 border-odin-gray">PROJECT</th>
+              <th class="hidden sm:table-cell border p-4 border-odin-gray">TECHNOLOGIES</th>
+              <th class="border p-4 border-odin-gray">REPO</th>
+              <th class="border p-4 border-odin-gray">LIVE</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td class="border p-2 border-odin-gray">Calculator</td>
-              <td class="border p-2 border-odin-gray">Javascript</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Etch-a-Sketch</td>
-              <td class="border p-2 border-odin-gray">Javascript</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Rock Paper Scissors</td>
-              <td class="border p-2 border-odin-gray">Javascript</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">Javascript</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Landing Page</td>
-              <td class="border p-2 border-odin-gray">HTML + CSS (Flexbox)</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">HTML + CSS (Flexbox)</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
             <tr>
               <td class="border p-2 border-odin-gray">Recipes</td>
-              <td class="border p-2 border-odin-gray">HTML</td>
+              <td class="hidden sm:table-cell border p-2 border-odin-gray">HTML</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
               <td class="border p-2 border-odin-gray text-center">View</td>
             </tr>
@@ -162,5 +224,6 @@
         </table>
       </div>
     </div>
+    <script type="module" src="/src/script.ts"></script>
   </body>
 </html>

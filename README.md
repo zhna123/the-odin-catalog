@@ -1,5 +1,10 @@
 # THE ODIN CATALOG
 
+This project is built with:
+* Vite
+* TailwindCSS
+* TypeScript
+
 ## Development
 1. Create vite project
 `npm create vite@latest`
