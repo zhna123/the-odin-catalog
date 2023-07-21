@@ -1,6 +1,7 @@
 # THE ODIN CATALOG
+My project catalog for The Odin Project
 
-This project is built with:
+Built with:
 * Vite
 * TailwindCSS
 * TypeScript
